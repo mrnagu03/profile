@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background: rgba(175, 164, 164, 0.829);
+}
+.nav{
+    height: 20px;
+    width: 100%;
+
+}
+.nav .back{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #000;
+    
+}
+.profile-content{
+    height: 20%;
+    width: 100%;
+    background:white;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.inner{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.inner .mydetails{
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    background: black;
+
+}
+
+.profile-content .ineer-right{
+    width: 80%;
+    height: 100%;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

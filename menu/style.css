@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(213, 145, 213);
+    display: flex;
+    
+    justify-content: space-between;
+
+} 
+h1 span:hover{
+    color: white;
+}
+h1{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+
+}
+.menu{
+    height: 40px;
+    width: 40px;
+    background: white;
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    right: 0px;
+    top:0px;
+    transition: 0.5s;
+   
+}
+.menu a{
+    scale: 0;
+    display: none;
+}
+.menubutton{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left:0;
+    border: none;
+    color: black;
+    cursor: pointer;
+
+}
+.menubutton i{
+    font-size: 20px;
+}
+.menu.active{
+    height: 400px;
+    width: 100px;
+    border-radius: 5px;
+    background: whitesmoke;
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: start; */
+    position: relative;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu.active .menubutton{
+    transform: translateX(-45px);
+    transition: 0.5s;
+}
+.menu.active a{
+    scale: 1;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color:black;
+    text-transform: uppercase;
+    margin: 25px 10px;
+    font-size: 13px;
+    overflow: hidden;
+    z-index: 1;
+    text-align: center;
+   
+    /* letter-spacing: 2px; */
+    
+    
+    }
+.menu.active a::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    left:-100px;
+    z-index: -1;
+    top:0;
+    padding: 5px;
+    transition: 0.8s;
+}
+.menu.active a:hover::after{
+    
+    left:0;
+}
+.menu.active a:hover{
+    color: white;
+    
+}
+
+
